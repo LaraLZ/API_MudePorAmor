@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Faça uma Doação</title>
+    <link rel="stylesheet" href="./css/doacao.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <header id="home">
+        <div class="logo">
+            <img src="./img/logo.jpeg" > <h4> Mude Por Amor </h4>
+        </div> 
+
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nossa História</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="quemSomos.html">Quem Somos</a>
+                        <a class="dropdown-item" href="info.html">Informações</a>
+                    <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="eventos.html">Eventos</a>
+                    </div>
+                </li> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Faça Parte</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="doacoes.html">Doações</a>
+                        <a class="dropdown-item" href="voluntarios.html">Voluntarios</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="titulo">Faça sua doação</h1>
+    <div class="form-container">
+        <form id="donationForm">
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+            <input type="number" id="amount" name="amount" placeholder="Valor da doação" min="5" required>
+            <select id="payment_method" name="payment_method">
+                <option value="Pix">Pix</option>
+                <option value="PayPal">PayPal</option>
+                <option value="CreditCard">Cartão de Crédito</option>
+                <option value="BankTransfer">Transferência Bancária</option>
+            </select>
+            <button type="submit">Doar</button>
+        </form>
+    </div>
+        <div class="pix-info" style="display:none;">
+            <p>Para doar via Pix, utilize a seguinte chave:</p>
+            <p id="pixKey">mudeporamor@gmail.com</p>
+        </div>
+        <div class="RealCestas">
+            <p>Doe através do link: <a href="https://www.realcestas.com.br/entidade/mude-por-amor/" target="_blank"><strong>Real Cestas</strong></a>.</p>
+        </div>
+
+    <footer>
+        <div class="social-media">
+            <h6>SOCIAL</h6>
+            <ul>
+                <li><a href="https://open.spotify.com/playlist/45L2akkRziXG5zZSTP9kws?si=7tFaG7SxRQ6IW4VVWyT5KA&utm_medium=share&utm_source=linktree&nd=1&dlsi=dc8158fd28774217" target="_blank">Spotify</a></li>
+                <li><a href="https://www.instagram.com/mudeporamor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100078688756329 target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/mudeporamor/?originalSubdomain=br" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+      
+        <div class="newsletter">
+            <p>Inscreva-se para receber informações sobre nossos eventos</p><br>
+            <form>
+                <input type="email" placeholder="E-mail">
+                <button type="submit">Enviar</button>
+            </form><br>
+        </div>
+        
+            <p>© Mude Por Amor</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script src="scriptDoacoes.js"></script>
+</body>
+</html>
